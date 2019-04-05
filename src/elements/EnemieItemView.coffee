@@ -13,5 +13,6 @@ class EnemieItemView extends PIXI.Graphics
         @alpha = 1
         @type = @model.type        
         @endFill()
+    
 
 module.exports = EnemieItemView

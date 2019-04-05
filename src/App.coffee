@@ -68,6 +68,14 @@ class App extends PIXI.Application
           console.log 'choqué'
           return n
     return false
+
+  enemieCollision: (obj1, arr)->
+      for n in arr
+        if (obj1.x < n.x + n.width && obj1.x + obj1.width > n.x)
+          if (obj1.y < n.y + n.height && obj1.y + obj1.height  > n.y)
+            console.log 'un enemigo'
+            return n
+      return false
           
   animate:=>
     @ticker.add ()=>
