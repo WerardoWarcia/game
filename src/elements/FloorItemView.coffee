@@ -10,7 +10,7 @@ class FloorItemView extends PIXI.Graphics
         @drawRect(0, 0, @model.w, @model.h)
         @x = @model.x
         @y = @model.y
-        @alpha = 0.5
+        @alpha = 1
         @type = @model.type
         #switch @type
         #    when 'wall'

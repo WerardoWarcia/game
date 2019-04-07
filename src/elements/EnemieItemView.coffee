@@ -1,6 +1,7 @@
 class EnemieItemView extends PIXI.Graphics
-    constructor: (model, container) ->
+    constructor: (model, container, app) ->
         super()
+        @app = app
         @model = model
         @container = container
         @container.addChild(@)

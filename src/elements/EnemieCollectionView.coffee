@@ -3,7 +3,7 @@ ItemView = require('./EnemieItemView')
 
 class EnemieCollectionView extends PIXI.Container
     collection: Collection
-    enemies:[]
+
     constructor: (app) ->
         super()
         @app = app
@@ -13,5 +13,10 @@ class EnemieCollectionView extends PIXI.Container
     buildItemView:()=>
         for model in @collection
             new ItemView(model, @)
-        console.log @enemies
+        
+        #for n in @children
+        #    console.log n
+
+
+
 module.exports = EnemieCollectionView

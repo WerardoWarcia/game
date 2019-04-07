@@ -27,6 +27,9 @@ class Rect extends PIXI.Graphics
             @speedY = 0
             @speedX = 0
         if @app.enemieCollision(@, @app.enemieContainer.children)
-            @alpha = 0
+            @x = 250
+            @y = 240
+            @speedY = 0
+            @speedX = 0
 
 module.exports = Rect
