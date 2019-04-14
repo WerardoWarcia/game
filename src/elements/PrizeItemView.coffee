@@ -1,7 +1,8 @@
-class FloorItemView extends PIXI.Graphics
+class PrizeItemView extends PIXI.Graphics
     constructor: (model, container) ->
         super()
         @model = model
+        @alpha = 1
         @container = container
         @container.addChild(@)
         @build()
@@ -10,9 +11,6 @@ class FloorItemView extends PIXI.Graphics
         @drawRect(0, 0, @model.w, @model.h)
         @x = @model.x
         @y = @model.y
-        @alpha = 1
-        @type = @model.type 
         @endFill()
 
-module.exports = FloorItemView
-        
+module.exports = PrizeItemView

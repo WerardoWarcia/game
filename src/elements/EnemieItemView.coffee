@@ -5,6 +5,7 @@ class EnemieItemView extends PIXI.Graphics
         @model = model
         @container = container
         @container.addChild(@)
+        @flag = false
         @build()
     build:()=>
         @beginFill(@model.color)

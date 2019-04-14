@@ -1,16 +1,15 @@
 class Prize extends PIXI.Graphics
-    color: "0x00ff00"
+    color: "0x00ffcc"
     w: 20
     h: 20
 
     constructor: ()->
         super()
-
         @build()
     build:=>
-        @begiinFill(@color)
+        @beginFill(@color)
         @drawRect(0,0,@w,@h)
-        @endeFill
-        @x = 800
+        @endFill()
+        @x = 1700
         @y = 800
-        module.exports = Prize
+module.exports = Prize

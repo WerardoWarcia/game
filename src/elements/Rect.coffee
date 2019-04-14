@@ -7,6 +7,8 @@ class Rect extends PIXI.Graphics
     type: null
     onGround: false
     alpha: 1
+    score: 0
+    muerto: false
     constructor: (app)->
         super()
         @app = app
@@ -26,10 +28,14 @@ class Rect extends PIXI.Graphics
             @y = 240
             @speedY = 0
             @speedX = 0
+            @muerto = true
         if @app.enemieCollision(@, @app.enemieContainer.children)
             @x = 250
             @y = 240
             @speedY = 0
             @speedX = 0
+            @muerto = true
+        if @app.prizeCollision(@, @app.prizeContainer.children)
+            null
 
 module.exports = Rect
