@@ -14,5 +14,7 @@ yarn start:dev
 Después de esto, en tu navegador tienes que busacar "localhost:8080" y comenzar a jugar
 ## Como jugar
 Utilizando las teclas w,a,s,d, para moverte, tendras que juntar los siete premios repartidos por el mapa
-Aviso:
+## Aviso:
+Abrir en Crhome
 Al morir se recarga la página, en caso de que no se recargue abrir una nueva página y cerrarla.
+Por algún motivo en Fire Fox no sirve
